@@ -4,6 +4,16 @@
     "country": "Romania"
   },
   "age": 23,
+  "family": [
+    {
+      "age": 35,
+      "role": "Wife"
+    },
+    {
+      "age": 7,
+      "role": "Daughter"
+    }
+  ],
   "firstname": "Alex",
   "mail": "alex@gmail.com"
 }
