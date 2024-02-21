@@ -11,15 +11,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val gson = Gson()
+
         /*
-        val employee = Employee("Alex", 23, "alex@gmail.com")
+        val address = Address("Romania", "Bucuresti")
+        val employee = Employee("Alex", 23, "alex@gmail.com", address)
         val json = gson.toJson(employee)
         Log.d("json", json)
          */
-        val json = "{\"age\":23,\"firstName\":\"Alex\",\"mail\":\"alex@gmail.com\"}"
+
+
+        val json = "{\"address\":{\"city\":\"Bucuresti\",\"country\":\"Romania\"},\"age\":23,\"firstname\":\"Alex\",\"mail\":\"alex@gmail.com\"}"
         val employee = gson.fromJson(json, Employee::class.java)
-        Log.d("json", employee.toString()) // without toString we have an error
-        //because employee is an object, not a string, toString method returns
-        //the string representation of the class
+        Log.d("json", employee.toString())
+
     }
 }

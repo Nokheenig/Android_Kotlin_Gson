@@ -1,3 +1,10 @@
 package com.example.gson
 
-data class Employee (val firstName: String, val age: Int, val mail: String)
+import com.google.gson.annotations.SerializedName
+
+data class Employee(
+    @SerializedName("firstname") val mFirstName: String,
+    @SerializedName("age") val mAge: Int,
+    @SerializedName("mail") val mMail: String,
+    @SerializedName("address") val mAddress: Address
+)

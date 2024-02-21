@@ -1,5 +1,9 @@
 {
+  "address": {
+    "city": "Bucuresti",
+    "country": "Romania"
+  },
   "age": 23,
-  "firstName": "Alex",
+  "firstname": "Alex",
   "mail": "alex@gmail.com"
 }
